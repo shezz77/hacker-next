@@ -28,7 +28,7 @@ class Story extends Component {
       return <Error statusCode={503} />;
     }
 
-    return <Layout title={story.title}>
+    return <Layout title={story.title} backButton={true}>
     <main>
         <h1 className="story-title"><a href={story.url}>{story.title}</a></h1>
         <div className="story-details">
