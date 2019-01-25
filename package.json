@@ -2,9 +2,13 @@
   "name": "hacker-next",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "dev": "next"
+    "dev": "node server.js",
+    "start": "NODE_ENV=production && node server.js",
+    "build": "next build",
+    "deploy": "now --public",
+    "heroku-postbuild": "npm run build"
   },
   "author": "Shezz",
   "license": "ISC",
